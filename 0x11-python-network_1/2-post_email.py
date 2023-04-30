@@ -13,5 +13,4 @@ if __name__ == "__main__":
 
     with urlopen(Request(argv[1],
          urlencode({"email": argv[2]}).encode("ascii"))) as response:
-
         print(response.read().decode("utf-8", "replace"))
