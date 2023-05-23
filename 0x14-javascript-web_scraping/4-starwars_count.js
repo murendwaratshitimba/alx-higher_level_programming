@@ -14,8 +14,7 @@ request(reqURL, function (error, response, body) {
     for (let i = 0; i < results.length; i++) {
       const chars = (results[i].characters);
       for (let j = 0; j < chars.length; j++) {
-        const check18 = chars[j].endsWith('18/');
-        if (check18) {
+        if (chars[j].endsWith('18/')) {
           count++;
         }
       }
